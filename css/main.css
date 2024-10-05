@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+body {
+    background: rgba(233, 236, 239, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Georama', sans-serif;
+}
+
+#header {
+    min-height: 75vh;
+    padding-top: 5vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(08, 08, 08, 0.7), rgba(08, 08, 08, 0.7)), url(../images/mark-olsen-IBD1q8XAya8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#header .img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .7);
+    padding: 40px auto;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: blue;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: blue;
+    font-weight: 700;
+}
+
+
+/* all css for the service section */
+
+#services {
+    background-image: linear-gradient(rgba(08, 08, 08, 0.4), rgba(08, 08, 08, 0.4)), url(../images/national-cancer-institute-701-FJcjLAQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#services a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: .3s ease-in;
+}
+
+#services h1,
+#services h2,
+#services h3,
+#services h4,
+#services h5 {
+    color: white;
+}
+
+#services .msg {
+    color: aliceblue;
+}
+
+#services span {
+    color: blue;
+}
+
+#services .icofont {
+    display: inline-block;
+    color: #545b62;
+}
+
+.service {
+    transition: hover .3s ease-in-out;
+    background-color: rgba(255, 255, 255, .4) !important;
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+}
+
+.service:hover {
+    transition: .3s ease-in;
+    transform: scale(1.1, 1.1);
+}
+
+.service:hover .icofont {
+    color: blue !important;
+}
+
+.img-area {
+    text-align: center !important;
+    margin-bottom: 20px;
+}
+
+.img-area img {
+    width: 100%;
+    border-radius: 50% !important;
+    width: 150px;
+    height: 150px;
+    padding-bottom: 20px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-text {
+    width: 100%;
+    height: 250px;
+    display: block;
+    text-align: center;
+}
+
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+#testimonial span {
+    display: inline-block;
+    padding: 5px 2px 15px 2px;
+    color: blue;
+}

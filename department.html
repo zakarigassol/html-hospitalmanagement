@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Services</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icofont/icofont.min.css">
+
+    <style>
+        .department {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            cursor: pointer;
+            transition: transform .3s ease-in;
+        }
+        .department:hover {
+            transform: scale(1.1, 1.1);
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow">
+        <div class=" container">
+            <a class="navbar-brand" href="/">CambH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/department.html">Department</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Centres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/centre/diagnostic.html">Diagnostic Centre</a>
+                            <a class="dropdown-item" href="/centre/community.html">Community Centre</a>
+                            <a class="dropdown-item" href="/centre/heart.html">Heart Centre</a>
+                            <a class="dropdown-item" href="/centre/cancer.html">Cancer centre</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/service/healthcheckup.html">Health Checkup</a>
+                            <a class="dropdown-item" href="/service/specialties.html">Specialties</a>
+                            <a class="dropdown-item" href="/service/generalservices.html">General Services</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-3">
+                        <a class="nav-link rounded-circle border text-primary" href="/feedback.html">
+                            <div class="d-flex justify-content-center">
+                                <i class=" icofont icofont-facebook"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-circle border text-info" href="/contactus.html">
+                            <div class="d-flex justify-content-center">
+                                <i class=" icofont icofont-twitter"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="py-5">
+
+        <!-- Modal for Help desk-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Help Desk Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            We provide help desk customer service 24/7 using AI software and human controlled system.
+                            <br /> Our customer care is always available to help you solve your problems <br /> We will help you troubleshoot your problems.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">
+                            <a href="">Contact Us</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Registration-->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active" aria-current="true">How To</li>
+                            <li class="list-group-item">Visit Any of our Hospitals.</li>
+                            <li class="list-group-item">Head to the Customer care.</li>
+                            <li class="list-group-item">Fill the form.</li>
+                            <li class="list-group-item">Retrun back for evaluation.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Billing & Account-->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Billing & Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Make a deposit of 40% to commence of total cost.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Doctor Scheduling-->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Billing & Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active" aria-current="true">
+                                Schedule
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Abdullahi, Dr. Michael, Dr Isah, Dr Kamaru
+                                <span class="badge badge-primary">Monday</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Abdullahi, Dr. Jackson, Dr Isah, Dr Jane
+                                <span class="badge badge-primary">Tuesday</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Michael, Dr. Jackson, Kamaru, Dr Jane
+                                <span class="badge badge-primary">Wednesday</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Abdullahi, Dr. Michael, Dr Isah, Dr Kamaru
+                                <span class="badge badge-primary">Thursday</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Abdullahi, Dr. Jackson, Dr Isah, Dr Jane
+                                <span class="badge badge-primary">Friday</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Michael, Dr. Jackson, Kamaru, Dr Jane
+                                <span class="badge badge-primary">Saturday</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Dr Abdullahi, Dr. Michael, Dr Isah, Dr Kamaru
+                                <span class="badge badge-primary">Sunday</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 py-4">
+                    <h1 class="h3">Our Department Section.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 offset-md-3">
+                    <div class="shadow p-3 p-md-5 text-center bg-white department" data-toggle="modal" data-target="#exampleModal">
+                        <div class="icofont icofont-4x icofont-headphone-alt pb-2"></div>
+                        <p>Help Desk</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="shadow p-3 p-md-5 text-center bg-white department" data-toggle="modal" data-target="#exampleModal1">
+                        <div class="icofont icofont-4x icofont-macbook pb-2"></div>
+                        <p>Registration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-6 col-md-3 offset-md-3">
+                    <div class="shadow p-3 p-md-5 text-center bg-white department" data-toggle="modal" data-target="#exampleModal2">
+                        <div class="icofont icofont-4x icofont-bill pb-2"></div>
+                        <p>Billing & Account</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="shadow p-3 p-md-5 text-center bg-white department" data-toggle="modal" data-target="#exampleModal3">
+                        <div class="icofont icofont-4x icofont-doctor-alt pb-2"></div>
+                        <p>Doctor Schedule</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class=" border-top">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-6">
+                    <p>&copy; coyright 2021, All right reserved. APTECH computer Institute</p>
+                </div>
+                <div class="col-6 text-right">
+                    Credit | Terms & Condition | Privacy
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- all js files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
